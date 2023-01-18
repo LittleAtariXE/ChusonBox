@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="emu-options-container">
+    <h1> {{ emu.system }} </h1>
+    <div id="emu-options-menu">
+      <a href="{{ url_for('main.romdirs', system=emu.name) }}"><div class="emu-options-item">
+        <span> Katalogi z Grami </span>
+      </div></a>
+      <a href="#"><div class="emu-options-item">
+        <span> Opcje Emulacji </span>
+      </div></a>
+      <a href="#"><div class="emu-options-item">
+        <span> Inne Ustawienia </span>
+      </div></a>
+
+
+    </div>
+  </div>
+
+{% endblock %}

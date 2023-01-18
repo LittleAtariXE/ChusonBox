@@ -1,0 +1,193 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+a:visited
+{
+	text-decoration: none;
+}
+
+a
+{
+	color: black;
+}
+
+#container
+{
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+	margin-top: 5px;
+	min-height: 700px;
+}
+
+#logo-container
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 150px;
+	background-color: aliceblue;
+	font-size: 250%;
+
+}
+
+#home-menu
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.home-menu-item
+{
+	width: 400px;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: aliceblue;
+	border: 2px solid gray;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	transition: all 1s ease-out;
+}
+
+.home-menu-item:hover
+{
+	box-shadow: 10px 20px 20px 0px rgba(0, 0, 0, 0.5);
+	background-color: darkturquoise;
+	opacity: 80%;
+	color: black;
+}
+
+.home-menu-item span
+{
+	font-size: 200%;
+}
+
+#options-container
+{
+	background-color: aliceblue;
+	margin-top: 20px;
+	display: flex;
+
+
+}
+
+#options-nes
+{
+
+
+}
+
+#options-nes:hover
+{
+	background-image: url(img/mario1.gif);
+}
+
+
+.options-menu-item
+{
+	width: 300px;
+	height: 300px;
+	background-color: blue;
+	border: 1px dotted gray;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	transition-property: box-shadow;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+/*	transition: all 0.5s ease-out;*/
+	color: black;
+}
+
+
+
+.options-menu-item:hover
+{
+	box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+	
+}
+
+.options-menu-item span
+{
+	font-size: 36px;
+}
+
+.options-config-container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: aliceblue;
+	margin-top: 20px;
+	display: flex;
+	flex-basis: 100%;
+	justify-content: center;
+	text-align: center;
+}
+
+.config-item
+{
+	margin-top: 5px;
+	border: 1px solid black;
+	min-width: 600px;
+
+}
+		
+.emu-options-container
+{
+	background-color: darkturquoise;
+	width: 80%;
+	min-height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+#emu-options-menu
+{
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 5px solid black;
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.emu-options-item
+{
+	font-size: 36px;
+	margin-top: 20px;
+	border: 1px dotted black;
+	transition: all 0.5s ease-out;
+
+}
+
+.emu-options-item:hover
+{
+	font-size: 48px;
+	background-color: lightgreen;
+
+}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="options-container">
+        <a href="{{ url_for('main.emu_options', system='nes') }}"><div class="options-menu-item" id="options-nes">
+            <span>NES
+            <br/>Pegasus</span>
+        </div></a>
+        <a href="{{ url_for('main.emu_options', system='c64') }}"><div class="options-menu-item" id="option-c64">
+            <span>C64</span>
+        </div></a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% macro rom_dirs(dirs) %}
+
+  {% for d in dirs %}
+    <div class="config-romdirs">
+      <button class="config-romdirs-del" name="{{d}}" value="{{d}}">{{d}}</button>
+      <br/>
+    </div>
+  {% endfor %}
+
+{% endmacro %}
+
