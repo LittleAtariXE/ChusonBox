@@ -1,5 +1,5 @@
 from . import main_BP
-from flask import render_template, redirect, url_for
+from flask import render_template, redirect, url_for, request
 from . import EMULATORS
 from .forms import RomsDirectory
 
@@ -30,3 +30,22 @@ def romdirs(system):
         return redirect(url_for('main.romdirs', system=emu.name))
 
     return render_template('romdirs.html', emu=emu, form=form)
+
+@main_BP.route('/start')
+def start():
+    return render_template('start.html')
+
+@main_BP.route('/start/<system>', methods=['POST', 'GET'])
+def start_system(system):
+    emu = EMULATORS[system]
+    if request.method == 'POST':
+        name = request.form.getlist('nm')[0]
+        print('NAME:', name)
+        if name == 'roms_scan':
+            emu.scan_dirs()
+            return redirect(url_for('main.start_system', system=emu.name))
+        print('NAME:', name)
+        emu.run_game(name)
+        return redirect(url_for('main.start_system', system=emu.name))
+
+    return render_template('start_system.html', emu=emu)

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="start-container">
+		<div id="start-logo">
+			<span> Wybierz System </span>
+		</div>
+
+		<div id="start-menu">
+			<a href="{{ url_for('main.start_system', system='nes') }}"><div class="start-item" id="start-nes"> <span>NES <br/> pegasus</span> </div></a>
+			<a href="#"><div class="start-item"> <span>Item 1</span> </div></a>
+			<a href="#"><div class="start-item"> <span>Item 1</span> </div></a>
+			<a href="#"><div class="start-item"> <span>Item 1</span> </div></a>
+			<a href="#"><div class="start-item"> <span>Item 1</span> </div></a>
+			<a href="#"><div class="start-item"> <span>Item 1</span> </div></a>
+
+		</div>
+
+	</div>
+
+{% endblock %}
