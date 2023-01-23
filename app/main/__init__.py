@@ -1,7 +1,7 @@
 from flask import Blueprint
-from .config_emu import emulators
+from .emu_config import EmuSystem, make_emulators
 
-EMULATORS = emulators
+emulators = make_emulators()
 
 main_BP = Blueprint('main', __name__)
 from . import views

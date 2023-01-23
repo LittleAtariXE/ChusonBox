@@ -1,0 +1,16 @@
+{
+   "name": "nes",
+   "system": null,
+   "extensions": [
+      ".zip",
+      ".rar",
+      ".nes"
+   ],
+   "file_rom_dirs": "/home/bewube/PycharmProjects/beta/C_Box01/app/main/emu_config/config/nes_dirs.txt",
+   "file_rom_list": "/home/bewube/PycharmProjects/beta/C_Box01/app/main/emu_config/config/nes_roms.json",
+   "emulator1": "fceux",
+   "option1": "",
+   "emulator2": null,
+   "option2": "",
+   "info": ""
+}

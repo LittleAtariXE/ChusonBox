@@ -2,13 +2,20 @@
 
 {% block content %}
     <div id="options-container">
-        <a href="{{ url_for('main.emu_options', system='nes') }}"><div class="options-menu-item" id="options-nes">
-            <span>NES
-            <br/>Pegasus</span>
-        </div></a>
-        <a href="{{ url_for('main.emu_options', system='c64') }}"><div class="options-menu-item" id="option-c64">
-            <span>C64</span>
-        </div></a>
+        <span> OPCJE </span>
+        <div class="menu-options-container">
+            <a href="{{ url_for('main.add_emu') }}">
+                <div class="menu-options-item"><span>Dodaj Emulator </span></div>
+            </a>
+
+            <a href="#">
+                <div class="menu-options-item"><span>Opcje Emulatorów </span></div>
+            </a>
+
+            <a href="#">
+                <div class="menu-options-item"><span>Inne Opcje </span></div>
+            </a>
+        </div>
     </div>
 
 {% endblock %}
