@@ -1,14 +1,15 @@
 from . import main_BP
 from flask import render_template, redirect, url_for, request
-from . import emulators
-from .forms import RomsDirectory
+from . import Emulators
+from .forms import AddEmuMainForm
+
+EMULATORS = Emulators()
 
 @main_BP.route('/')
 def home():
-    nes = emulators['nes']
 
-    return render_template('home.html', nes=nes)
 
+    return render_template('home.html')
 
 @main_BP.route('/options/')
 def options():
@@ -16,5 +17,11 @@ def options():
 
 @main_BP.route('/options/add', methods=['POST', 'GET'])
 def add_emu():
-    return render_template('add_emu.html')
+    form = AddEmuMainForm()
+    if form.validate_on_submit():
+        name = form.name.data
+        EMULATORS.add_new_emulator(name)
+        return redirect(url_for('main.options'))
+
+    return render_template('add_emu.html', form=form)
 

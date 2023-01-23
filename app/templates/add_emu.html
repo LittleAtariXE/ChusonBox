@@ -2,4 +2,19 @@
 
 {% block content %}
 
+	<div class="options-container">
+		<span> <h1>DODAJ EMULATOR </h1></span>
+		<div class="menu-options-container">
+			<form action="" method="POST">
+				{{ form.hidden_tag() }}
+				{{ form.name.label(class="options-label") }}
+				<br/>
+				{{ form.name(class="options-input") }}
+				<br/> 
+				{{ form.submit(class="options-submit") }}
+			</form>
+		</div>
+	</div>
+
+
 {% endblock %}
