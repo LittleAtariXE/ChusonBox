@@ -191,9 +191,70 @@ a
 	display: block;
 }
 
+.edit-menu-container
+{
+	margin-top: 5px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+
+}
+
+.edit-menu-item
+{
+	width: 300px;
+	height: 150px;
+	border: 3px solid black;
+	margin: 10px;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(img/back4.jpg);
+	transition: all 1s ease-out;
+}
+
+.edit-menu-item:hover
+{
+	box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.75);
+}
+
+#edit-menu-item-long
+{
+	width: 600px;
+	height: 150px;
+
+}
+
+#edit-menu-item-long span
+{
+	font-size: 18px;
+}
+
+.edit-menu-input
+{
+	height: 36px;
+	text-align: center;
+	font-size: 28px;
+	width: 90%;
+}
+
+.edit-menu-label
+{
+	text-align: center;
+	width: 90%;
+	font-size: 22px;
+
+}
 
 
-.options-config-container
+
+/*.options-config-container
 {
 	width: 90%;
 	margin-left: auto;
@@ -298,7 +359,7 @@ a
 {
 	background-image: url(img/mario1.gif);
 	
-}
+}*/
 
 
 

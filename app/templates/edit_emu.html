@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="options-container">
+		<span> <h1> {{ emu.name }} </h1> </span>
+		<form action="" method="POST">
+			<div class="edit-menu-container">
+			
+				{{ form.hidden_tag() }}
+				<div class="edit-menu-item">
+					{{ form.system.label(class="edit-menu-label") }} <br/> {{form.system(class="edit-menu-input", value=emu.system) }}
+				</div>
+
+				<div class="edit-menu-item">
+					{{ form.emulator1.label(class="edit-menu-label") }} <br/> {{form.emulator1(class="edit-menu-input", value=emu.emu1) }}
+				</div>
+
+				<div class="edit-menu-item">
+					{{ form.option1.label(class="edit-menu-label") }} <br/> {{form.option1(class="edit-menu-input", value=emu.option1) }}
+				</div>
+
+				<div class="edit-menu-item">
+					{{ form.emulator2.label(class="edit-menu-label") }} <br/> {{form.emulator2(class="edit-menu-input", value=emu.emu2) }}
+				</div>
+
+				<div class="edit-menu-item">
+					{{ form.option2.label(class="edit-menu-label") }} <br/> {{form.option2(class="edit-menu-input", value=emu.option2) }}
+				</div>
+
+				<div class="edit-menu-item" id="edit-menu-item-long">
+					{{ form.ext.label(class="edit-menu-label") }} <br/> <span>{{ emu.ext }} </span> <br/> {{form.ext(class="edit-menu-input") }}
+				</div>
+
+				<div class="edit-menu-item">
+					 {{form.submit(class="edit-menu-input") }}
+				</div>
+
+			</div>
+		</form>
+
+		
+	</div>
+
+
+{% endblock %}
