@@ -15,6 +15,10 @@ def home():
 def options():
     return render_template('options.html')
 
+@main_BP.route('/options/edit')
+def options_edit():
+    return render_template('options_edit.html', emu=EMULATORS)
+
 @main_BP.route('/options/add', methods=['POST', 'GET'])
 def add_emu():
     form = AddEmuMainForm()
