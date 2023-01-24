@@ -25,7 +25,8 @@ a
 	margin-left: auto;
 	margin-right: auto;
 	background-color: red;
-	margin-top: 5px;
+	background-image: url(img/back6.jpg);
+/*	margin-top: 5px;*/
 	min-height: 700px;
 }
 
@@ -37,11 +38,49 @@ a
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	height: 150px;
+	height: 130px;
 	background-color: aliceblue;
-	font-size: 250%;
+	font-size: 200%;
 
 }
+
+#nav-container
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: burlywood;
+	height: 100px;
+	margin-top: 5px;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.nav-button
+{
+	display: inline-block;
+	margin-right: 30px;
+	border: 3px solid black;
+	height: 70px;
+	margin-top: 10px;
+	margin-bottom: auto;
+	min-width: 200px;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+	transition: all 1s ease-out;
+
+}
+
+.nav-button:hover
+{
+	box-shadow: 8px 8px 20px 4px rgba(0, 0, 0, 0.75);
+	background-color: lightgreen;
+
+}
+
+
+
+
 
 #home-menu
 {
@@ -84,6 +123,7 @@ a
 .options-container
 {
 	background-color: aliceblue;
+	background-image: url(img/back2.jpeg);
 	margin-top: 20px;
 	
 	margin-left: auto;
@@ -95,7 +135,7 @@ a
 .menu-options-container
 {
 	
-	width: 600px;
+	width: 700px;
 	min-height: 200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -103,16 +143,21 @@ a
 	justify-content: center;
 	margin-top: 15px;
 	border: 5px solid black;
+	box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
 
 
 }
 
 .menu-options-item
 {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
 	border: 1px dotted black;
 	margin-top: 10px;
 	background-color: red;
 	font-size: 200%;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
 	transition: all 0.5s ease-out;
 }
 
@@ -120,6 +165,7 @@ a
 {
 	font-size: 300%;
 	background-color: green;
+	box-shadow: 10px 10px 25px 3px rgba(0, 0, 0, 0.85);
 }
 
 .options-input

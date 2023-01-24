@@ -12,6 +12,12 @@
             <h1> ChusonBox 2 </h1>
             <h5> ver 2.0 </h5>
         </div>
+        <div id="nav-container">
+            <a href="{{ url_for('main.home') }}"><div class="nav-button"> <span>START </span></div></a>
+            <a href="{{ g.back }}"><div class="nav-button"> <span>WSTECZ </span></div></a>
+            <div style="clear: both;"></div>
+
+        </div>
 
     {% block content %}
     {% endblock %}
