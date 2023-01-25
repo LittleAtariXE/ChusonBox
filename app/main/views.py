@@ -1,7 +1,7 @@
 from . import main_BP
 from flask import render_template, redirect, url_for, request, g
 from . import Emulators
-from .forms import AddEmuMainForm, EditEmuForm
+from .forms import AddEmuMainForm, EditEmuForm, RomsDirectoryForm
 
 EMULATORS = Emulators()
 
@@ -45,4 +45,34 @@ def edit_emu(name):
         return redirect(url_for('main.edit_emu', name=emu.name))
 
     return render_template('edit_emu.html', form=form, emu=emu)
+
+@main_BP.route('/start')
+def start():
+    return render_template('start.html', emu=EMULATORS)
+
+@main_BP.route('/start/<name>')
+def start_emu(name):
+    emu = getattr(EMULATORS, name)
+    return render_template('start_emu.html', emu=emu)
+
+@main_BP.route('/start/<name>/option', methods=['POST', 'GET'])
+def start_emu_option(name):
+    emu = getattr(EMULATORS, name)
+    form = RomsDirectoryForm()
+    if form.validate_on_submit():
+        new = form.add_new.data
+        emu.add_rom_dir(new)
+
+        return redirect(url_for('main.start_emu_option', name=emu.name))
+
+
+    return render_template('start_emu_option.html', emu=emu, form=form)
+
+@main_BP.route('/start/<name>/game_list')
+def start_game(name):
+    emu = getattr(EMULATORS, name)
+
+    return render_template('start_game.html')
+
+
 

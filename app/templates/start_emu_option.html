@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div class="start-emu-option-container">
+
+		<div class="seo-dirs">
+			<h2>Lista Katalogów z Romami (grami) </h2>
+			{% for d in emu.rom_dirs %}
+
+				<div class="seo-dirs-item"> {{ d }} </div>
+
+			{% endfor %}
+			
+		</div>
+
+		<div class="seo-add-dir">
+			<form action="" method="POST">
+
+				{{ form.hidden_tag() }}
+
+				{{ form.add_new.label }}
+				<br/>
+				{{ form.add_new() }}
+				<br/>
+				{{ form.submit() }}
+
+
+
+			</form>
+		</div>
+
+
+	</div>
+
+
+{% endblock %}
