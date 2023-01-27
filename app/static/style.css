@@ -366,6 +366,62 @@ a
 	font-size: 24px;
 }
 
+.start-game-container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.start-game-text
+{
+	text-align: center;
+	margin-top: 2px;
+}
+
+.start-scan
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+	font-size: 24px;
+	border: 1px solid gray;
+	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+	padding-bottom: 10px;
+
+}
+
+.start-rom-list
+{
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.game-button
+{
+	height: 60px;
+	margin: 10px;
+	background-color: antiquewhite;
+	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+	border: 1px solid black;
+	transition: all 1s ease-out;
+}
+
+.game-button:hover
+{
+	box-shadow: 10px 10px 15px 6px rgba(0, 0, 0, 0.75);
+	background-color: lawngreen;
+
+}
+
 
 
 /*.options-config-container

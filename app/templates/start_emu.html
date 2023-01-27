@@ -7,7 +7,7 @@
         <span> <h1>{{ emu.name }}</h1></span>
         <span> <h2>{{ emu.system }}</h2></span>
         <div class="menu-options-container">
-            <a href="#">
+            <a href="{{ url_for('main.start_game', name=emu.name) }}">
                 <div class="menu-options-item"><span>Graj !!!</span></div>
             </a>
 

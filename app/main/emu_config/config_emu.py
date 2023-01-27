@@ -7,6 +7,17 @@ sys_config = basedir + '/systems/'
 config_dir = basedir + '/config/'
 
 
+def check_config_dirs():
+    if not os.path.isdir(sys_config):
+        os.makedirs(sys_config)
+
+    if not os.path.isdir(config_dir):
+        os.makedirs(config_dir)
+
+
+
+
+
 def load_system(path):
     try:
         with open(path, 'r') as f:
@@ -254,6 +265,7 @@ class EmuSystem(EmuConfig):
 
 
 ###### TEST
+
 
 
 

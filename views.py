@@ -2,9 +2,14 @@ from flask import g, request, redirect, url_for
 from run import app
 
 
+
+
 @app.before_request
-def back():
+def get_back():
     g.back = request.referrer
+
+
+
 
 @app.errorhandler(404)
 def not_found(e):

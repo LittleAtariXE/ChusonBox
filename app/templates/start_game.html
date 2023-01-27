@@ -3,6 +3,36 @@
 
 {% block content %}
 
+	
+	<div class="start-game-container">
+		<form action="" method="POST">
+
+			<div class="start-game-text">
+				<h1> {{ emu.system }} </h1>
+				<h2> {{ emu.name }} </h2>
+			</div>
+
+			<div class="start-scan">
+				<span> Kliknij aby przeszukać katalogi z grami </span>
+				<button type="submit" id="scan-button" name="game" value="roms_scan"> SKANUJ </button>
+			</div>
+
+			<div class="start-game-text"> Lista Gier </div>
+
+			<div class="start-rom-list">
 
 
+
+				{% for rom in emu.rom_list %}
+
+					<button type="submit" class="game-button" name="game" value="{{ rom }}"> {{ rom }} </button>
+
+				{% endfor %}
+
+			</div>
+
+
+
+		</form>
+	</div>
 {% endblock %}

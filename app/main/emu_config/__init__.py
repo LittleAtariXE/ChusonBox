@@ -1,4 +1,4 @@
-from .config_emu import EmuSystem
+from .config_emu import EmuSystem, check_config_dirs
 import os
 
 def make_emulators():
@@ -11,6 +11,7 @@ def make_emulators():
 
 class Emulators:
     def __init__(self):
+        check_config_dirs()
         self.emulators = self.load_emulators()
         self.add_emu()
 

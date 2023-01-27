@@ -68,11 +68,19 @@ def start_emu_option(name):
 
     return render_template('start_emu_option.html', emu=emu, form=form)
 
-@main_BP.route('/start/<name>/game_list')
+@main_BP.route('/start/<name>/game_list', methods=['POST', 'GET'])
 def start_game(name):
     emu = getattr(EMULATORS, name)
 
-    return render_template('start_game.html')
+    if request.method == 'POST':
+        button = request.form.getlist('game')
+        if button[0] == 'roms_scan':
+            emu.scan_dirs()
+            return redirect(url_for('main.start_game', name=emu.name))
+        else:
+            emu.run_game(button[0])
+
+    return render_template('start_game.html', emu=emu)
 
 
 
