@@ -1,12 +1,5 @@
-from .config_emu import EmuSystem, check_config_dirs
 import os
-
-def make_emulators():
-    emulators = {}
-    for emu in os.listdir(EmuSystem.dir_config()):
-        system = emu[0:emu.find('.json')]
-        emulators[system] = EmuSystem(system)
-    return emulators
+from .emu_config import check_config_dirs, EmuSystem
 
 
 class Emulators:
@@ -42,9 +35,6 @@ class Emulators:
             print(f'***** {system} *****\n {self.emulators[system].system_conf}')
             print('-' * 100)
         return '*' * 100
-
-
-
 
 
 

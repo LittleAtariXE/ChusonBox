@@ -1,6 +1,6 @@
 from . import main_BP
 from flask import render_template, redirect, url_for, request, g
-from . import Emulators
+from ..emubox import Emulators
 from .forms import AddEmuMainForm, EditEmuForm, RomsDirectoryForm
 
 EMULATORS = Emulators()

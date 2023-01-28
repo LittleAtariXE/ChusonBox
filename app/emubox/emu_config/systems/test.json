@@ -1,0 +1,14 @@
+{
+   "name": "test",
+   "system": "tester",
+   "extensions": [
+      ".tet"
+   ],
+   "file_rom_dirs": "/home/bewube/PycharmProjects/beta/C_Box01/app/emubox/emu_config/config/test_dirs.txt",
+   "file_rom_list": "/home/bewube/PycharmProjects/beta/C_Box01/app/emubox/emu_config/config/test_roms.json",
+   "emulator1": "None",
+   "option1": "",
+   "emulator2": "None",
+   "option2": "",
+   "info": ""
+}

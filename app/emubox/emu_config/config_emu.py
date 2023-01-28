@@ -58,6 +58,10 @@ class EmuConfig:
         self._info = self.system_conf['info']
         self.name = name
 
+
+
+
+
     @staticmethod
     def dir_config():
         return sys_config
@@ -148,8 +152,14 @@ class EmuConfig:
 
 
     def add_ext(self, ext):
+        if ext == '' or ext == None:
+            return 0
+        if not str(ext).startswith('.'):
+            ext = '.' + ext
         self.ext.add(ext)
         self.system_conf['extensions'] = list(self.ext)
+        self.save_emu_config()
+
 
 
 
@@ -192,6 +202,7 @@ class EmuConfig:
             f.write(json.dumps(self.system_conf, indent=3))
 
 
+##############################################################################################
 
 class EmuSystem(EmuConfig):
     def __init__(self, name):
@@ -232,6 +243,14 @@ class EmuSystem(EmuConfig):
         return roms_list
 
     def scan_dirs(self):
+
+        def check_char(name):
+            if name.lower().startswith('the'):
+                char = name[4]
+            else:
+                char = name[0]
+            return char
+
         char_filename = {' ': '\\ ', '(': '\(', ')': '\)'}
         output = {}
         for d in self.rom_dirs:
@@ -244,7 +263,8 @@ class EmuSystem(EmuConfig):
                         for k in char_filename:
                             path = path.replace(k, char_filename[k])
                         text = ''
-                        output[name] = {'path': path, 'text': text}
+                        char = check_char(name)
+                        output[name] = {'path': path, 'text': text, 'char': char}
             except FileNotFoundError:
                 continue
 
@@ -265,21 +285,4 @@ class EmuSystem(EmuConfig):
 
 
 ###### TEST
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
