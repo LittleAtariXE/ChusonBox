@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+
+	<a href="{{ url_for('options.home') }}"><div class="nav-item">Wstecz</div></a>
+
+
+{% endblock %}
+
+{% block content %}
+
+	<form action="" method="POST">
+
+		<div class="simple-menu-cont">
+			{{ form.hidden_tag() }}
+
+			<div class="simple-menu-item">
+				{{ form.name.label(class="sm-input-label") }}
+				{{ form.name(class="sm-input" ) }}
+			</div>
+
+			<div class="simple-menu-item">
+
+				{{ form.submit(class="sm-button") }}
+			</div>
+
+			<div class="sm-description">
+				<span>Podaj nazwę Emulatora. Nazwa nie musi być związana z rzeczywistym systemem emulacji (czyli nie musisz nazywać: "nintendo", "commodore" itp). Nazwy nie mogą się powtarzać. Po nazwach system identyfikuje Emulatory </span>
+			</div>
+
+
+		</div>
+
+
+
+	</form>
+{% endblock %}

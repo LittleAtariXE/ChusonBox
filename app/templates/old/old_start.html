@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div id="start-container">
+		<div class="start-text">
+			<span> <h1>Wybierz System </h1></span>
+		</div>
+
+		<div class="start-system-container">
+
+
+			{% for e in emu.emulators %}
+
+				<a href="{{ url_for('main.start_emu', name=emu[e].name) }}"><div class="start-system-item-container">
+					 <span> {{ emu[e].system }} </span>
+					
+					<div class="start-system-item">{{ emu[e].name }} </div>
+
+				</div></a>
+
+
+
+			{% endfor %}
+
+
+			
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+{% endblock %}
+

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div id="home-menu">
+        <a href="{{ url_for('main.start') }}"><div class="home-menu-item">
+            <span>START</span>
+        </div></a>
+        <a href="{{ url_for('main.options') }}"><div class="home-menu-item">
+            <span>OPTIONS</span>
+        </div></a>
+    </div>
+    
+{% endblock %}

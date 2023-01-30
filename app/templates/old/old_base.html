@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <title>Chuson Box 2</title>
+</head>
+<body>
+    <div id="container">
+        <div id="logo-container">
+            <h1> ChusonBox 2 </h1>
+            <h5> ver 2.0 </h5>
+        </div>
+        <div id="nav-container">
+            <a href="{{ url_for('start.home') }}"><div class="nav-button"> <span>START </span></div></a>
+            <a href="{{ url_for('options.home') }}"><div class="nav-button"> <span>WSTECZ </span></div></a>
+            <div style="clear: both;"></div>
+
+        </div>
+
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+</html>

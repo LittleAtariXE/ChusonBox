@@ -2,7 +2,31 @@
 
 {% block content %}
 
-    <h1> OPTIONS HOME </h1>
+    <div class="menu-container">
+
+        <a href="{{ url_for('options.add_emu') }}">
+            <div class="menu-item">
+                <span class="menu-item-text">Dodaj Emulator</span>
+                <div class="menu-item-dropdown">
+                    <span>Dodaj nowy Emulator. Żeby Emulator prawidłowo działał musi być zainstalowany</span>
+                </div>
+
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="menu-item">
+                <span class="menu-item-text">Edytuj Emulatory</span>
+                <div class="menu-item-dropdown">
+                    <span>Możesz zmienić opcje, konfiguracje już dodanych emulatorów</span>
+                </div>
+
+            </div>
+        </a>
+
+
+
+    </div>
 
 {% endblock %}
 

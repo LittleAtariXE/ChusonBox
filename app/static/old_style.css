@@ -1,0 +1,536 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+a:visited
+{
+	text-decoration: none;
+}
+
+a
+{
+	color: black;
+}
+
+#container
+{
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+	background-image: url(img/back6.jpg);
+/*	margin-top: 5px;*/
+	min-height: 700px;
+}
+
+#logo-container
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 130px;
+	background-color: aliceblue;
+	font-size: 200%;
+
+}
+
+#nav-container
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: burlywood;
+	height: 100px;
+	margin-top: 5px;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.nav-button
+{
+	display: inline-block;
+	margin-right: 30px;
+	border: 3px solid black;
+	height: 70px;
+	margin-top: 10px;
+	margin-bottom: auto;
+	min-width: 200px;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	font-size: 30px;
+	transition: all 1s ease-out;
+
+}
+
+.nav-button:hover
+{
+	box-shadow: 8px 8px 20px 4px rgba(0, 0, 0, 0.75);
+	background-color: lightgreen;
+
+}
+
+
+
+
+
+#home-menu
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.home-menu-item
+{
+	width: 400px;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: aliceblue;
+	border: 2px solid gray;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	transition: all 1s ease-out;
+}
+
+.home-menu-item:hover
+{
+	box-shadow: 10px 20px 20px 0px rgba(0, 0, 0, 0.5);
+	background-color: darkturquoise;
+	opacity: 80%;
+	color: black;
+}
+
+.home-menu-item span
+{
+	font-size: 200%;
+}
+
+.options-container
+{
+	background-color: aliceblue;
+	background-image: url(img/back2.jpeg);
+	margin-top: 20px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	text-align: center;
+}
+
+.menu-options-container
+{
+	
+	width: 700px;
+	min-height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	justify-content: center;
+	margin-top: 15px;
+	border: 5px solid black;
+	box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.75);
+
+
+}
+
+.menu-options-item
+{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px dotted black;
+	margin-top: 10px;
+	background-color: red;
+	font-size: 200%;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s ease-out;
+}
+
+.menu-options-item:hover
+{
+	font-size: 300%;
+	background-color: green;
+	box-shadow: 10px 10px 25px 3px rgba(0, 0, 0, 0.85);
+}
+
+.options-input
+{
+	
+	font-size: 36px;
+	text-align: center;
+}
+
+.options-submit
+{
+	font-size: 36px;
+	margin-top: 15px;
+	background-color: blue;
+
+}
+
+.options-label
+{
+	font-size: 24px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: block;
+}
+
+.edit-menu-container
+{
+	margin-top: 5px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+
+}
+
+.edit-menu-item
+{
+	width: 300px;
+	height: 150px;
+	border: 3px solid black;
+	margin: 10px;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(img/back4.jpg);
+	transition: all 1s ease-out;
+}
+
+.edit-menu-item:hover
+{
+	box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.75);
+}
+
+#edit-menu-item-long
+{
+	width: 600px;
+	height: 150px;
+
+}
+
+#edit-menu-item-long span
+{
+	font-size: 18px;
+}
+
+.edit-menu-input
+{
+	height: 36px;
+	text-align: center;
+	font-size: 28px;
+	width: 90%;
+}
+
+.edit-menu-label
+{
+	text-align: center;
+	width: 90%;
+	font-size: 22px;
+
+}
+
+.options-edit-item
+{
+	border: 1px solid black;
+	box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.5);
+	margin: 10px;
+	min-width: 100px;
+	font-size: 36px;
+
+}
+
+.edit-menu-item span
+{
+	display: block;
+	margin: 10px;
+	font-size: 24px;
+}
+
+#start-container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+
+}
+
+.start-text
+{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.start-system-container
+{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.start-system-item-container
+{
+	width: 300px;
+	height: 150px;
+	margin: 20px;
+	border: 3px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5);
+	background-image: url(img/back4.jpg);
+	transition: all 1s ease-out;
+}
+
+.start-system-item-container:hover
+{
+	width: 350px;
+	height: 200px;
+	box-shadow: 20px 20px 15px 5px rgba(0, 0, 0, 0.75);
+
+}
+
+.start-system-item-container
+{
+	font-size: 38px;
+}
+
+
+.start-system-item
+{
+	border: 1px solid black;
+	font-size: 32px;
+	margin-top: 10px;
+	min-width: 100px;
+	text-align: center;
+	background-color: lightcoral;
+	box-shadow: 10px 10px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.start-emu-option-container
+{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.seo-dirs
+{
+	background-color: antiquewhite;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+
+}
+
+.seo-dirs-item
+{
+	border: 1px dotted black;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 24px;
+}
+
+.start-game-container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.start-game-text
+{
+	text-align: center;
+	margin-top: 2px;
+}
+
+.start-scan
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: center;
+	font-size: 24px;
+	border: 1px solid gray;
+	box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+	padding-bottom: 10px;
+
+}
+
+.start-rom-list
+{
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.game-button
+{
+	height: 60px;
+	margin: 10px;
+	background-color: antiquewhite;
+	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+	border: 1px solid black;
+	transition: all 1s ease-out;
+}
+
+.game-button:hover
+{
+	box-shadow: 10px 10px 15px 6px rgba(0, 0, 0, 0.75);
+	background-color: lawngreen;
+
+}
+
+
+
+/*.options-config-container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: aliceblue;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.config-item
+{
+	margin-top: 5px;
+	border: 1px solid black;
+	min-width: 600px;
+
+}
+		
+.emu-options-container
+{
+	background-color: darkturquoise;
+	width: 80%;
+	min-height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+#emu-options-menu
+{
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 5px solid black;
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.emu-options-item
+{
+	font-size: 36px;
+	margin-top: 20px;
+	border: 1px dotted black;
+	transition: all 0.5s ease-out;
+
+}
+
+.emu-options-item:hover
+{
+	font-size: 48px;
+	background-color: lightgreen;
+
+}
+
+#start-container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+
+	background-color: aliceblue;
+	
+}
+
+#start-logo
+{
+	text-align: center;
+	font-size: 48px;
+}
+
+#start-menu
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.start-item
+{
+	width: 300px;
+	height: 300px;
+	background-color: blueviolet;
+	margin: 20px;
+	font-size: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	transition: all 1s ease-out;
+}
+
+.start-item:hover
+{
+	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+	width: 400px;
+	height: 400px;
+}
+
+#start-nes:hover
+{
+	background-image: url(img/mario1.gif);
+	
+}*/
+
+
+
+
